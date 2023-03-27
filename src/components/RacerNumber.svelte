@@ -2,4 +2,11 @@
   export let number
 </script>
 
-<p>{number}</p>
+<p class="racer-number">{number}</p>
+
+<style>
+  .racer-number {
+    position: relative;
+    z-index: 1;
+  }
+</style>
