@@ -6,7 +6,7 @@
 
 <style>
   .racer-image {
-    width: 15rem;
+    width: 100%;
     position: relative;
     z-index: 1;
   }

@@ -14,7 +14,7 @@
   const racerNumber = 14;
 </script>
 
-<section>
+<section class="race-section">
   <RacerBackground background={alonsoBackground} />
   <section class="race-info race-background">
     <RacerAside>
@@ -22,29 +22,25 @@
       <RaceTeamLogo logo="{astonMartinTeamLogo}" />
       <RacerImage image={alonsoProfile}/>
     </RacerAside>
-    <RacerStatistics />
+    <RacerStatistics>
+      Статистика: 3235
+    </RacerStatistics>
   </section>
 </section>
 
-<style>
+<style lang="scss">
+  .race-section {
+    position: relative;
+    height: 100vh;
+  }
+
   .race-info {
     height: 100%;
     display: inline-flex;
     position: relative;
   }
 
-  /*.race-background {*/
-  /*  position: relative;*/
-  /*}*/
-
-  /*.race-background:after {*/
-  /*  content: url("");*/
-  /*  width: 100%;*/
-  /*  height: 100%;*/
-  /*  position: absolute;*/
-  /*  background-color: red;*/
-  /*  top: 0;*/
-  /*  left: 0;*/
-  /*  transform: perspective(20vw) rotateY(45deg);*/
-  /*}*/
+  .race-background {
+    display: flex;
+  }
 </style>

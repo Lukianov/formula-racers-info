@@ -4,21 +4,23 @@
 
 <style>
   .race-aside {
+    flex-basis: 40%;
+    overflow: hidden;
     position: relative;
     flex-direction: column;
     display: flex;
-    height: 100vh;
     justify-content: end;
+    align-items: center;
   }
 
-  .race-aside:after {
-    content: url("");
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: #002420;
-    top: 0;
-    left: 0;
-    transform: rotate(12deg) scale(3) translateX(-4rem);
-  }
+  /*.race-aside:after {*/
+  /*  content: '';*/
+  /*  width: 100%;*/
+  /*  height: 100%;*/
+  /*  position: absolute;*/
+  /*  background-color: #002420;*/
+  /*  top: 0;*/
+  /*  left: 0;*/
+  /*  transform: rotate(19deg) scale(2) translateY(12rem);*/
+  /*}*/
 </style>
