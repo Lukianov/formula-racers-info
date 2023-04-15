@@ -19,8 +19,12 @@
   <section class="race-info race-background">
     <RacerAside>
       <RacerNumber number="{racerNumber}"/>
-      <RaceTeamLogo logo="{astonMartinTeamLogo}" />
-      <RacerImage image={alonsoProfile}/>
+      <div class="race-image-wrapper race-image-wrapper_logo">
+        <RaceTeamLogo logo="{astonMartinTeamLogo}" />
+      </div>
+      <div class="race-image-wrapper race-image-wrapper_pilot">
+        <RacerImage image={alonsoProfile}/>
+      </div>
     </RacerAside>
     <RacerStatistics>
       Статистика: 3235
@@ -29,6 +33,20 @@
 </section>
 
 <style lang="scss">
+  .race-image-wrapper {
+    position: relative;
+    flex: 1 0 auto;
+    width: 100%;
+
+    &_pilot {
+      flex-basis: 60%;
+    }
+
+    &_logo {
+      flex-basis: 20%;
+    }
+  }
+
   .race-section {
     position: relative;
     height: 100vh;

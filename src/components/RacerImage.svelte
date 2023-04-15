@@ -7,7 +7,9 @@
 <style>
   .racer-image {
     width: 100%;
-    position: relative;
+    position: absolute;
     z-index: 1;
+    height: 100%;
+    object-fit: contain;
   }
 </style>
