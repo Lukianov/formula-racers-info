@@ -5,12 +5,12 @@
 <style>
   .race-aside {
     flex-basis: 40%;
-    overflow: hidden;
     position: relative;
     flex-direction: column;
     display: flex;
     justify-content: end;
     align-items: center;
+    gap: 16px;
   }
 
   /*.race-aside:after {*/
