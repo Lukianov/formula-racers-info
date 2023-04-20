@@ -75,3 +75,12 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@font-face {
+  font-family: 'Formula';
+  src: url('static/Formula1-Bold_web_0.woff') format('woff2-variations');
+}
+
+* {
+  font-family: 'Formula', 'Fira Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
+}
